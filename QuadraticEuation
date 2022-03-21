@@ -26,4 +26,9 @@ public class QuadraticEuation {
     }
    
 }
+
 Output:
+run:
+Discreminent Value:NaN
+Roots are equal
+BUILD SUCCESSFUL (total time: 0 seconds)
