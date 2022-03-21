@@ -1,0 +1,32 @@
+public class Bikers {
+    public static void main(String[] Strings)
+    {
+        double a = Double.parseDouble(Strings[0]);
+        double b = Double.parseDouble(Strings[1]);
+        double c = Double.parseDouble(Strings[2]);
+        double d = Double.parseDouble(Strings[3]);
+        double e = Double.parseDouble(Strings[4]);
+        double avg_speed=(a+b+c+d+e)/5;
+        System.out.println("The Average Speed for Qualifying the Racers are:"+avg_speed);
+        if(a>avg_speed)
+            System.out.println("Racer1 is qualified with speed"+a+"which s more than avgspeed"+avg_speed);
+        if(b>avg_speed)
+              System.out.println("Racer2 is qualified with speed"+b+"which s more than avgspeed"+avg_speed);
+        if(c>avg_speed)
+              System.out.println("Racer3 is qualified with speed"+c+"which s more than avgspeed"+avg_speed);
+        if(d>avg_speed)
+              System.out.println("Racer4 is qualified with speed"+d+"which s more than avgspeed"+avg_speed);
+        if(e>avg_speed)
+             System.out.println("Racer5 is qualified with speed"+e+"which s more than avgspeed"+avg_speed);
+        else
+            System.out.println("None of the racers quality the race");
+    }
+}
+
+Output:
+
+run:
+The Average Speed for Qualifying the Racers are:3.0
+Racer4 is qualified with speed4.0which s more than avgspeed3.0
+Racer5 is qualified with speed5.0which s more than avgspeed3.0
+BUILD SUCCESSFUL (total time: 0 seconds)
