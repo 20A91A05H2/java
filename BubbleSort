@@ -1,0 +1,38 @@
+package pkg20a91a05h2;
+
+public class BubbleSort {
+   static void Sort (int[] arr)
+   {
+    int n = arr.length;
+    int temp = 0;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=1;j<(n-i);j++)
+        {
+            if(arr[j-1]>arr[j])
+            {
+                temp = arr[j-1];
+                arr[j-1] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    }
+public static void main (String[] args)
+{
+    int elements[] = {3,60,35,2,45,320,5,10};
+    System.out.print("Array Before Bubble Sorting");
+    for(int i=0;i<elements.length;i++)
+    {
+        System.out.println(elements[i]+" ");
+    }
+    System.out.println();
+    Sort(elements);
+    System.out.println("Array After Bubble Sort");
+    for(int i=0;i<elements.length;i++)
+    {
+     System.out.println(elements[i]+"");
+    }
+}
+
+}
