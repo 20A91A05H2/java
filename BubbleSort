@@ -36,3 +36,28 @@ public static void main (String[] args)
 }
 
 }
+
+
+Output:
+
+
+run:
+Array Before Bubble Sorting3 
+60 
+35 
+2 
+45 
+320 
+5 
+10 
+
+Array After Bubble Sort
+2
+3
+5
+10
+35
+45
+60
+320
+BUILD SUCCESSFUL (total time: 0 seconds)
