@@ -1,0 +1,31 @@
+package pkg20a91a05h2;
+class COverloading
+{
+   public COverloading()
+   {
+       System.out.println("Default constructor");
+   }
+   public COverloading(String a)
+   {
+       System.out.println("Parameter passed:"+a);
+   }
+   public COverloading(int a,int b)
+   {
+       System.out.println("Two Arguments Passed.They are A: "+a+" B: "+b);
+       System.out.println("Sum of "+a+" and "+b+" is: "+(a+b));
+   }
+}
+public class ConstructorOverloading {
+     public static void main(String[] arg)
+    {
+        COverloading c = new COverloading();
+        COverloading c1 = new COverloading("hello");
+        COverloading c2 = new COverloading(10,20);
+    }
+}
+
+
+
+
+
+
