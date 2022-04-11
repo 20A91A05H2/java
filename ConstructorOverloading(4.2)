@@ -25,7 +25,14 @@ public class ConstructorOverloading {
 }
 
 
+Output:
 
+run:
+Default constructor
+Parameter passed:hello
+Two Arguments Passed.They are A: 10 B: 20
+Sum of 10 and 20 is: 30
+BUILD SUCCESSFUL (total time: 0 seconds)
 
 
 
