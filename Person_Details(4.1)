@@ -1,0 +1,58 @@
+package pkg20a91a05h2;
+import java.util.Scanner;
+public class Person_Details {
+    String fname,mname,name,qualifi;
+    Scanner input = new Scanner (System.in);
+    public void getPersonal()
+    {
+        System.out.println("Enter Your Name: ");
+        name=input.nextLine();
+        System.out.println("Enter Your Father Name: ");
+        fname=input.nextLine();
+        System.out.println("Enter Your Mother Name: ");
+        mname = input.nextLine();
+    }
+    public void getQualification()
+    {
+        System.out.println("Enter Your Qualification: ");
+        qualifi=input.nextLine();
+    }
+    public void putPersonal()
+    {
+        System.out.println("Your Name is : " +name);
+        System.out.println("Your Father's Name is : " +fname);
+        System.out.println("Your Mother's Name is : " +mname);
+    }
+    public void putQualification()
+    {
+        System.out.println("Your Qualification is : " +qualifi);
+    }
+    public static void main(String a[])
+    {
+        Person_Details pd=new Person_Details();
+        pd.getPersonal();
+        pd.getQualification();
+        pd.putPersonal();
+        pd.putQualification();
+    }
+}
+
+
+Output:
+
+
+run:
+Enter Your Name: 
+kele
+Enter Your Father Name: 
+sirinivas
+Enter Your Mother Name: 
+lakshmi
+Enter Your Qualification: 
+btech
+Your Name is : kele
+Your Father's Name is : sirinivas
+Your Mother's Name is : lakshmi
+Your Qualification is : btech
+BUILD SUCCESSFUL (total time: 38 seconds)
+
