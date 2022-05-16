@@ -1,0 +1,52 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
+public class Runtime_User_Exception {
+    public static void main(String[] args)throws FileNotFoundException,IOException{
+        try{
+            testException(10);
+            testException(-5);
+        }catch(FileNotFoundException e){
+            e.printStackTrace();
+    }catch(IOException e){
+        e.printStackTrace();
+    }finally{
+    System.out.println("Releasing resources");
+}
+    testException(15);
+}
+
+public static void testException(int i)throws
+FileNotFoundException,IOException{
+     if(i<10){
+        FileNotFoundException myException=new  FileNotFoundException("Negative Integer"+i);
+        throw myException;
+     }else if(i>10){
+        throw new IOException("Only supported for index 0 to 10");
+        }
+     else{
+            System.out.println("Valid Input");
+        }
+}
+}
+
+
+
+Output:
+
+
+
+
+C:\Users\admin\Desktop>javac Runtime_User_Exception.java
+
+C:\Users\admin\Desktop>java Runtime_User_Exception
+Valid Input
+java.io.FileNotFoundException: Negative Integer-5
+        at Runtime_User_Exception.testException(Runtime_User_Exception.java:21)
+        at Runtime_User_Exception.main(Runtime_User_Exception.java:7)
+Releasing resources
+Exception in thread "main" java.io.IOException: Only supported for index 0 to 10
+        at Runtime_User_Exception.testException(Runtime_User_Exception.java:24)
+        at Runtime_User_Exception.main(Runtime_User_Exception.java:15)
+
+C:\Users\admin\Desktop>
+
