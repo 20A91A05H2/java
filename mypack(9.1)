@@ -1,0 +1,19 @@
+Program:
+package p1;
+public class mypack {
+  	  public void msg()
+   	 {
+        System.out.println("hello");
+   	 }
+}
+    package p1;
+public class ex1 {
+  	  public static void main(String args[])
+    	{
+       		mypack obj=new mypack();
+      			  obj.msg();
+   	 }
+}
+
+Output:
+Hello
