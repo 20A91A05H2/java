@@ -1,0 +1,19 @@
+Program:
+package p2;
+public class protectedpack1 {
+    protected void display()
+    {
+        System.out.println("hello world");
+    }
+}
+package p2;
+import p2.*;
+public class protectedpack2 extends protectedpack1 {
+    public static void main (String args[])
+    {
+        protectedpack2 obj=new protectedpack2();
+        obj.display();
+    }
+}
+Output:
+hello world
