@@ -1,0 +1,67 @@
+class AA implements Runnable 
+    {
+        public void run()
+        {
+            try
+            {
+                for(int i=0;i<10;i++)
+                {
+                    Thread.sleep(1000);
+                    System.out.println("Good morning");
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+        }
+    }   
+class BB implements Runnable 
+    {
+        public void run()
+        {
+            try
+            {
+                for(int j=0;j<10;j++)
+                {
+                    Thread.sleep(2000);
+                    System.out.println("Hello");
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+        }
+    }   
+class CC implements Runnable 
+    {
+        public void run()
+        {
+            try
+            {
+                for(int k=0;k<10;k++)
+                {
+                    Thread.sleep(3000);
+                    System.out.println("Welcome");
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }}}   
+public class Thread_Demo_Runnable
+{
+    public static void main(String []args)
+    {
+        AA a1=new AA();
+        BB b1=new BB();
+        CC c1=new CC();
+        Thread t1=new Thread(a1);
+        Thread t2=new Thread(b1);
+        Thread t3=new Thread(c1);
+       t1.start();
+       t2.start();
+       t3.start();
+    }
+}
