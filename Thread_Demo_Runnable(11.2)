@@ -65,3 +65,40 @@ public class Thread_Demo_Runnable
        t3.start();
     }
 }
+
+
+Output:
+
+run:
+Good morning
+Good morning
+Hello
+Welcome
+Good morning
+Hello
+Good morning
+Good morning
+Welcome
+Hello
+Good morning
+Good morning
+Hello
+Good morning
+Welcome
+Good morning
+Hello
+Good morning
+Welcome
+Hello
+Hello
+Welcome
+Hello
+Welcome
+Hello
+Hello
+Welcome
+Welcome
+Welcome
+Welcome
+BUILD SUCCESSFUL (total time: 30 seconds)
+
