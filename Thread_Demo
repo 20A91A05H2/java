@@ -1,0 +1,102 @@
+class A extends Thread
+    {
+        public void run()
+        {
+            try
+            {
+                for(int i=0;i<10;i++)
+                {
+                    sleep(1000);
+                    System.out.println("Good morning");
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+        }
+    }   
+class B extends Thread
+    {
+        public void run()
+        {
+            try
+            {
+                for(int j=0;j<10;j++)
+                {
+                    sleep(2000);
+                    System.out.println("Hello");
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+        }
+    }   
+class C extends Thread
+    {
+        public void run()
+        {
+            try
+            {
+                for(int k=0;k<10;k++)
+                {
+                    sleep(3000);
+                    System.out.println("Welcome");
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+        }
+    }   
+public class Thread_Demo
+{
+    public static void main(String []args)
+    {
+        A a1=new A();
+        B b1=new B();
+        C c1=new C();
+        a1.start();
+        b1.start();
+        c1.start();
+    }
+}
+
+
+Output:
+
+run:
+Good morning
+Good morning
+Hello
+Good morning
+Welcome
+Hello
+Good morning
+Good morning
+Welcome
+Hello
+Good morning
+Good morning
+Hello
+Good morning
+Welcome
+Good morning
+Hello
+Good morning
+Welcome
+Hello
+Hello
+Welcome
+Hello
+Welcome
+Hello
+Hello
+Welcome
+Welcome
+Welcome
+Welcome
+BUILD SUCCESSFUL (total time: 30 seconds)
